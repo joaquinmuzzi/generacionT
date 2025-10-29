@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding Challenge 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Coding Challenge 1</h1>
+
+    <section class="card">
+      <h2>Ejercicio 1 – Evaluar Rendimiento</h2>
+      <input id="nota" type="number" min="0" max="10" placeholder="Ingrese nota">
+      <button onclick="evaluarRendimiento()">Evaluar</button>
+      <p id="resultado1"></p>
+    </section>
+
+    <section class="card">
+      <h2>Ejercicio 2 – The Biggest One</h2>
+      <input id="num1" type="number" placeholder="Número 1">
+      <input id="num2" type="number" placeholder="Número 2">
+      <input id="palabra" type="text" placeholder="Palabra">
+      <button onclick="biggestOneHandler()">Comparar</button>
+      <p id="resultado2"></p>
+    </section>
+
+    <section class="card">
+      <h2>Ejercicio 3 – Frootloop</h2>
+      <button onclick="frootloopHandler()">Mostrar frutas</button>
+      <pre id="resultado3"></pre>
+    </section>
+
+    <section class="card">
+      <h2>Ejercicio 4 – Soda Dispenser</h2>
+      <input id="pedido" type="text" placeholder="Ingrese gaseosa">
+      <button onclick="dispenserHandler()">Consultar stock</button>
+      <p id="resultado4"></p>
+    </section>
+
+    <section class="card">
+      <h2>Ejercicio 5 – Año de Nacimiento</h2>
+      <button onclick="anioNacimientoHandler()">Calcular años</button>
+      <pre id="resultado5"></pre>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
