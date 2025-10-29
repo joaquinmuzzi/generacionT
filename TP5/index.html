@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Desafío FizzBuzz2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Desafío FizzBuzz2</h1>
+
+    <form id="fizzForm" class="card" onsubmit="return false;">
+      <div class="row">
+        <label for="word1">Palabra 1 (reemplaza a Fizz):</label>
+        <input id="word1" type="text" value="Fizz" required>
+      </div>
+
+      <div class="row">
+        <label for="word2">Palabra 2 (reemplaza a Buzz):</label>
+        <input id="word2" type="text" value="Buzz" required>
+      </div>
+
+      <div class="row-inline">
+        <div>
+          <label for="fizzNum">Número fizz (múltiplos de):</label>
+          <input id="fizzNum" type="number" min="1" value="3" required>
+        </div>
+        <div>
+          <label for="buzzNum">Número buzz (múltiplos de):</label>
+          <input id="buzzNum" type="number" min="1" value="5" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="maxNum">Contar hasta (n):</label>
+        <input id="maxNum" type="number" min="1" value="100" required>
+      </div>
+
+      <div class="actions">
+        <button id="runBtn" type="button">Generar</button>
+        <button id="copyBtn" type="button">Copiar al portapapeles</button>
+        <button id="downloadBtn" type="button">Descargar .txt</button>
+      </div>
+    </form>
+
+    <section class="output card">
+      <h2>Resultado</h2>
+      <pre id="result" aria-live="polite"></pre>
+    </section>
+
+    <footer>
+      <small>
+        La función principal es <code>fizzBuzz2(word1, word2, fizzNum, buzzNum, max)</code>
+        y devuelve un <strong>String</strong> con los valores separados por comas.
+      </small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
