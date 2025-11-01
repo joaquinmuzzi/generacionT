@@ -1,0 +1,24 @@
+html,body{
+  margin:0;
+  padding:0;
+  height:100vh;
+  background-image:url("./jnCXdAx\ -\ Imgur.jpg");
+  background-size:cover;
+  background-position:center;
+  cursor: none;
+}
+.follower{
+  position:fixed;
+  top:0;
+  left:0;
+  transform:translate(0,0);
+  transition:0s;
+  pointer-events:none;
+  user-select:none;
+  width:80px;
+  height:auto;
+}
+.follower img{
+  width:100%;
+  height:auto;
+}
